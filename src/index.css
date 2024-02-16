@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Calculator';
+  src: url('./assets/fonts/Calculator.ttf')  format('truetype');
+}
+
+
 * {
   font-family: Calculator, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
