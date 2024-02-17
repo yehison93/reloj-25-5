@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import Display from './components/Display'
 import { UseClock } from './CustomHooks/UseClock'
