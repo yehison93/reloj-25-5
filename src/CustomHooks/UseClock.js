@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+const opciones = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+
 export const UseClock = () => {
   const [time, setTime] = useState(new Date())
 
@@ -11,5 +13,8 @@ export const UseClock = () => {
       clearInterval(timerID)
     }
   }, [])
-  return time
+
+  const dateHour = { date: time.toLocaleDateString(), hour: time.toLocaleTimeString('en-US', opciones) }
+
+  return dateHour
 }

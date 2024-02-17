@@ -18,8 +18,8 @@ const Display = ({ idTimerLabel, idTimeLeft, idStartStop, idReset, time, state, 
       p-0
       '
       >
-        <Card.Text style={{ width: '100%' }} className='bg-secondary text-light m-0 p-0'>{time.toLocaleDateString()}</Card.Text>
-        <Card.Text style={{ width: '100%' }} className='m-0 p-0'>{time.toLocaleTimeString()}</Card.Text>
+        <Card.Text style={{ width: '100%' }} className='bg-secondary text-light m-0 p-0'>{time.date}</Card.Text>
+        <Card.Text style={{ width: '100%' }} className='m-0 p-0'>{time.hour}</Card.Text>
         <DisplayTime
           idTimerLabel={idTimerLabel}
           idTimeLeft={idTimeLeft}
